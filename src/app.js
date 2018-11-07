@@ -1,17 +1,14 @@
 import React from 'react';
-import {
-  View
-} from 'react-native';
-import { Providers } from 'react-redux';
+import { View } from 'react-native';
 import { createStore } from 'redux';
-import reducers from './reducers';
+import { Provider } from 'react-redux';
+// import { Header } from './components/common';
+import reducer from './reducers';
 
-const App = () => {
-  return (
-    <Providers store={createStore(reducers)}>
+const App = () => (
+    <Provider store={createStore(reducer)} >
       <View />
-    </Providers>
+    </Provider>
   );
-};
 
-export default App;
+export { App };
