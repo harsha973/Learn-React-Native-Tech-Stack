@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Text } from 'react-native';
 import { CardSection } from './common';
 
-class LibraryListItem extends Component {
+class ListItem extends Component {
 
   render() {
     console.log(this.props.library);
@@ -21,4 +21,4 @@ const styles = {
   }
 };
 
-export default LibraryListItem;
+export default ListItem;
